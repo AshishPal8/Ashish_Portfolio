@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashish Pal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-queries.css" />
+</head>
+
+<body>
+    <!-- nav for desktop -->
+    <nav id="desktop-nav">
+        <div class="logo">Ashish Pal</div>
+        <ul class="nav-links">
+            <ul>
+                <a href="#about">About</a>
+            </ul>
+            <ul>
+                <a href="#experience">Experience</a>
+            </ul>
+            <ul>
+                <a href="#projects">Projects</a>
+            </ul>
+            <ul>
+                <a href="#contact">Contact</a>
+            </ul>
+        </ul>
+    </nav>
+
+    <!-- nav for mobile -->
+    <nav id="hamburger-nav">
+        <div class="logo">Ashish Pal</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <a href="#about" onclick="toggleMenu()">About</a>
+                </ul>
+                <ul>
+                    <a href="#experience" onclick="toggleMenu()">Experience</a>
+                </ul>
+                <ul>
+                    <a href="#projects" onclick="toggleMenu()">Projects</a>
+                </ul>
+                <ul>
+                    <a href="#contact" onclick="toggleMenu()">Contact</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets/profile-pic-5.png" alt="" />
+        </div>
+        <div class="section__text">
+            <p class="section__text-p1">Hello, I'm</p>
+            <h1 class="title">Ashish Pal</h1>
+            <p class="section__text-p2">Frontend Developer</p>
+            <div class="button__container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Ashish resume.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href = './#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div class="social-container">
+                <img class="icon" src="./assets/linkedin.png" alt="linkedin profile"
+                    onclick="location.href = 'https://www.linkedin.com/in/ashishpal01/' " />
+                <img class="icon" src="./assets/github.png" alt="linkedin profile"
+                    onclick="location.href = 'https://github.com/AshishPal8' " />
+            </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+
+    <section id="about">
+        <p class="section__text-p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic 1.png" alt="" class="about-pic" />
+            </div>
+            <div class="about-detail-container">
+                <div class="about-container">
+                    <div class="detail-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>Fresher <br />Full Stack Developer</p>
+                    </div>
+                    <div class="detail-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>BCA <br />Computer Application</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        As a full-stack developer, I've crafted a diverse portfolio featuring web applications that
+                        highlight my front-end proficiency using frameworks like React, alongside back-end skills using
+                        Node.js. I've integrated databases such as MySQL, showcasing my ability to manage data and
+                        implement complex features. With a strong grasp of version control, responsive design, and API
+                        integration, I prioritize optimizing performance and ensuring seamless user experiences. My
+                        projects exemplify my problem-solving abilities and commitment to delivering end-to-end
+                        solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href = '#experience'" />
+    </section>
+
+    <!-- Experience section -->
+
+    <section id="experience">
+        <p class="section__text-p1">Explore My</p>
+        <h2 class="title">Experience</h2>
+        <div class="experience-detail-container">
+            <div class="about-container">
+                <div class="detail-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div class="experience-heading">
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div class="experience-heading">
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div class="experience-heading">
+                                <h3>Javascript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div class="experience-heading">
+                                <h3>React JS</h3>
+                                <p>intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div class="experience-heading">
+                                <h3>typeScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div class="experience-heading">
+                                <h3>Material UI</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="detail-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div class="experience-heading">
+                                <h3>Node JS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div class="experience-heading">
+                                <h3>Express JS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div class="experience-heading">
+                                <h3>MongoDB</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div class="experience-heading">
+                                <h3>Git & GitHub</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href = '#projects'" />
+    </section>
+
+    <!-- Project Section -->
+
+    <section id="projects">
+        <p class="section__text-p1">Browse my Recents</p>
+        <h3 class="title">Projects</h3>
+        <div class="experience-detail-container">
+            <div class="about-container">
+                <div class="detail-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.jpg" alt="Project 1 image" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Ecommerce</h2>
+                    <div class="button-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href = 'https://github.com/AshishPal8/Ecommerce'">
+                            GitHub
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href = 'https://ashishpal8.github.io/Ecommerce/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="detail-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="Project 2 image" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">News Website</h2>
+                    <div class="button-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href = 'https://github.com/AshishPal8/News_website'">
+                            GitHub
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href = 'https://ashishpal8.github.io/News_website/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="detail-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="Project 3 image" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project 3</h2>
+                    <div class="button-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href = 'https://github.com/AshishPal8'">
+                            GitHub
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href = 'https://github.com/AshishPal8'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href = '#contact'" />
+    </section>
+
+    <!-- contact section -->
+
+    <section id="contact">
+        <p class="section__text-p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:ashish81301669@gmail.com">ashish81301669@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/ashishpal01/">linkedin</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <ul>
+                        <a href="#about">About</a>
+                    </ul>
+                    <ul>
+                        <a href="#experience">Experience</a>
+                    </ul>
+                    <ul>
+                        <a href="#projects">Projects</a>
+                    </ul>
+                    <ul>
+                        <a href="#contact">Contact</a>
+                    </ul>
+                </ul>
+            </div>
+        </nav>
+        <p>copyright &copy; 2023 ASHISH PAL All right reserverd</p>
+    </footer>
+    <script src=" script.js"></script>
+</body>
+
+</html>
